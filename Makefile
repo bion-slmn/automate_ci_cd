@@ -77,7 +77,9 @@ testall:
 clean:
 	@echo "Cleaning up pycahe files ..."
 	rm -rf */__pycache__ 
+	@echo
 	@echo "Cleaning up migrations files ..."
 	rm -f *.sqlite3
+	@echo
 	@echo "Cleaning up log files ..."     
 	rm -rf logs/
