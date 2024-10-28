@@ -70,3 +70,12 @@ testmodule:
 testall:
 	@echo "Testing all modules..."
 	$(POETRY_RUN_DJANGO) test
+
+
+clean:
+	@echo "Cleaning up pycahe files ..."
+	rm -rf */__pycache__ 
+	@echo "Cleaning up migrations files ..."
+	rm -f *.sqlite3
+	@echo "Cleaning up log files ..."     
+	rm -rf logs/
