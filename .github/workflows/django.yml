@@ -35,7 +35,7 @@ jobs:
 
       - name: Run tests
         run: |
-          poetry run python manage.py runserver  # Adjust the command if you're using a different test framework
+          python3 manage.py runserver  # Adjust the command if you're using a different test framework
 
       - name: Deploy to Render
         env:
