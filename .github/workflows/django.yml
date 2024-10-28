@@ -35,7 +35,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m poetry run python manage.py runserver
+          poetry run python manage.py test
 
       - name: Deploy to Render
         env:
