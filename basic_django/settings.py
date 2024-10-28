@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wc872%c6q@^55vsvc3xp455-gg(&!0a(r)1jasd2y=tzep-@ec
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+ALLOWED_HOSTS = ['automate-ci-cd.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
