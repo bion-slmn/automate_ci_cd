@@ -41,5 +41,5 @@ jobs:
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
         run: |
-          echo "Render API Key: $RENDER_API_KEY"
+          echo "Render API Key: ${RENDER_API_KEY:0:4}********"
           curl '$RENDER_API_KEY'
