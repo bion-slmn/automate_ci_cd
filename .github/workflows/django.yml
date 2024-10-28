@@ -10,7 +10,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.7, 3.8, 3.9]
+        python-version: [3.7, 3.8]
 
     steps:
       - name: Checkout repository
@@ -35,7 +35,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python3 manage.py runserver  # Adjust the command if you're using a different test framework
+          poetry run python manage.py runserver  # Adjust the command if you're using a different test framework
 
       - name: Deploy to Render
         env:
